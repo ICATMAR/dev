@@ -39,7 +39,7 @@ window.WMTSTileManager = new WMTSTileManagerClass();
 // Import scripts
 import FileManager from './Assets/Scripts/FileManager.js';
 import DataManager from './Assets/Scripts/DataManager.js';
-import GUIManager from '../VISAP/Assets/Scripts/GUIManager.js';
+import GUIManager from '../dev/Assets/Scripts/GUIManager.js';
 import GAnalyticsManager from './Assets/Scripts/GAnalyticsManager.js';
 
 window.FileManager = new FileManager();

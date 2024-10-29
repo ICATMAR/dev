@@ -63,7 +63,7 @@ class FileManager {
 
     let modURL = mod == 'trawling' ? 'trawlingData' : mod == 'purse-seine' ? 'purseSeineData' : 'recreational';
     let modCode = mod == 'trawling' ? 'trawling' : mod == 'purse-seine' ? 'ps' : 'rec';
-    let baseURL = '/VISAP/data/' + modURL + '/';
+    let baseURL = '/dev/data/' + modURL + '/';
 
     // Effort maps and legends
     // All is not shown in the app, as we separate between fishing modalities
@@ -140,7 +140,7 @@ class FileManager {
   loadHaulCatchCompositionFile = function (id, mod) {
     // Define url
     let modURL = mod == 'trawling' ? 'trawlingData' : mod == 'purse-seine' ? 'purseSeineData' : 'recreational';
-    let baseURL = '/VISAP/data/' + modURL + '/hauls/';
+    let baseURL = '/dev/data/' + modURL + '/hauls/';
 
     let url = baseURL + id + '.json';
 
@@ -178,7 +178,7 @@ class FileManager {
 
     let modURL = mod == 'trawling' ? 'trawlingData' : mod == 'purse-seine' ? 'purseSeineData' : 'recreational';
     let modCode = mod == 'trawling' ? 'trawling' : mod == 'purse-seine' ? 'ps' : 'rec';
-    let baseURL = '/VISAP/data/' + modURL + '/';
+    let baseURL = '/dev/data/' + modURL + '/';
 
     urls.push(baseURL + modCode + '_port_biomass.json');
     urls.push(baseURL + modCode + '_season_biomass.json');
@@ -242,7 +242,7 @@ console.error("File not at " + e.stack.split('\n')[1].split('/').pop());        
   loadLengthDistFile = function (mod) {
     let modURL = mod == 'trawling' ? 'trawlingData' : mod == 'purse-seine' ? 'purseSeineData' : 'recreational';
     let modCode = mod == 'trawling' ? 'trawling' : mod == 'purse-seine' ? 'ps' : 'rec';
-    let baseURL = '/VISAP/data/' + modURL + '/';
+    let baseURL = '/dev/data/' + modURL + '/';
 
     let url = baseURL + modCode + '_sizes.json';
 
